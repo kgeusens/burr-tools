@@ -22,3 +22,5 @@ src/gui/burrGui
 src/help/helpviewer
 src/unitTest
 src/config.h.in
+wasm/burr-tools.js
+wasm/burr-tools.wasm
