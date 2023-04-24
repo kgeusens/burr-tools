@@ -1,11 +1,10 @@
 {
   "name": "@kgeusens/burr-tools",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "nodejs wrapper to burrtools solver code",
   "main": "wasm/burr-tools.js",
   "scripts": {
-    "test": "cd test; node test.js",
-    "publish": "npm publish --access public"
+    "test": "cd test; node test.js"
   },
   "keywords": [
     "burr"
