@@ -1,0 +1,18 @@
+{
+  "name": "@kgeusens/burr-tools",
+  "version": "0.1.0",
+  "description": "nodejs wrapper to burrtools solver code",
+  "main": "wasm/burr-tools.js",
+  "scripts": {
+    "test": "cd test; node test.js"
+  },
+  "keywords": [
+    "burr"
+  ],
+  "author": "Koen Geusens",
+  "license": "ISC",
+  "files": [
+    "wasm/burr-tools.js",
+    "wasm/burr-tools.wasm"
+  ]
+}
