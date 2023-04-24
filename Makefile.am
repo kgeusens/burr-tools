@@ -11,7 +11,6 @@ EXTRA_DIST += src/lib/tabs_2/generator_2.cpp
 EXTRA_DIST += src/lib/tabs_3/generator_mesh_3.cpp
 EXTRA_DIST += src/lib/tabs_4/generator_mesh_4.cpp
 EXTRA_DIST += doc/convert.sh
-EXTRA_DIST += src/flu/README
 EXTRA_DIST += src/halfedge/README
 
 dist_doc_DATA =
@@ -42,7 +41,6 @@ dist-win32: all
 	$(RM) -r $(win32dir)
 	$(INSTALL) -d                        $(win32dir)
 	$(INSTALL) -d                        $(win32dir)/examples
-	$(INSTALL) -m755 src/gui/burrGui.exe $(win32dir)/
 	$(STRIP) $(win32dir)/*.exe
 	upx --lzma $(win32dir)/*.exe
 	cd $(srcdir) && for FILE in $(dist_doc_DATA); do case $$FILE in \
