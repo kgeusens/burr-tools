@@ -58,7 +58,7 @@ Sources = $(libSources) $(edgeSources) $(toolSources) $(srcSources)
 Objects = $(libObjects) $(edgeObjects) $(toolObjects) $(srcObjects) $(targetObjects)
 
 burr-tools.js: $(Objects) post.js
-	emcc -O2 $(Objects) -o $@ -lstdc++ -sEXPORTED_FUNCTIONS=_solvePuzzle -sEXPORTED_RUNTIME_METHODS=cwrap --post-js=post.js
+	emcc -O2 $(Objects) -o $@ -lstdc++ -sEXPORTED_FUNCTIONS=_solvePuzzle -sEXPORTED_RUNTIME_METHODS=cwrap -s ENVIRONMENT='web,worker' -s EXPORT_ES6=1 -s MODULARIZE=1 --post-js=post.js
 
 $(libObjects) : %.o : ../src/lib/%.cpp
 	emcc -DNO_THREADING -I. -Wall -W -Wextra -I/usr/local/include -g -O2 -c $<

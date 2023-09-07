@@ -1,6 +1,7 @@
 {
   "name": "@kgeusens/burr-tools",
-  "version": "0.1.2",
+  "type": "module",
+  "version": "0.1.3",
   "description": "nodejs wrapper to burrtools solver code",
   "main": "wasm/burr-tools.js",
   "scripts": {
